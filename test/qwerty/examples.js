@@ -1,4 +1,10 @@
 // styled-components
+import styled from 'styled-components';
+
+// Stitches
+import { styled } from '@stitches/react';
+
+// styled-components
 const Button = styled.button`
   color: red;
   font-size: 14px;

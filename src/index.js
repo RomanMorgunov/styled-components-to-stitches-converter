@@ -1,3 +1,3 @@
-const { convertFile } = require('./convertStyledFiles');
+const { convertStyleFiles } = require('./convertStyledFiles');
 
-convertFile('./src/examples.js');
+exports.convertStyleFiles = convertStyleFiles;

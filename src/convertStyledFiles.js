@@ -1,5 +1,5 @@
 const { readFile, writeFile } = require('node:fs/promises')
-const jetpack = require("fs-jetpack");
+const { findAsync } = require("fs-jetpack");
 
 const { convertImport } = require('./convertImport');
 const { convertStyledComponents } = require('./convertStyledComponents');
@@ -21,7 +21,7 @@ async function convertStyleFiles(dirPath) {
  * @returns {string[]}
  */
 async function findStyleComponentFiles(dirPath) {
-    return await jetpack.findAsync(dirPath, { matching: STYLE_COMPONENT_FILE_EXTENSIONS });
+    return await findAsync(dirPath, { matching: STYLE_COMPONENT_FILE_EXTENSIONS });
 }
 
 /**
@@ -36,5 +36,4 @@ async function convertFile(filePath) {
     await writeFile(filePath, fileText, ENCODING);
 }
 
-exports.convertFile = convertFile;
 exports.convertStyleFiles = convertStyleFiles;
