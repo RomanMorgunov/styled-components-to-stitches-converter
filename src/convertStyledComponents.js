@@ -1,6 +1,6 @@
 const { convertCSS } = require('./convertCSS');
 
-const STYLED_COMPONENT_REGEX = /styled(\.(?<tag>\w+)|(\((?<component>\w+)\)))`(?<css>[\n\s\w:;\-&{},.]+)`/gm;
+const STYLED_COMPONENT_REGEX = /styled((\.(?<tag>\w+)(<[a-zA-Z0-9{}:;\s'"$?]+>)?)|(\((?<component>\w+)\)))`(?<css>[\n\s\w:;\-&{},.]+)`/gm;
 
 /**
  * @param {string} value 

@@ -14,6 +14,26 @@ const Button = styled.button`
   }
 `;
 
+const Button = styled.button<Props>`
+  color: red;
+  font-size: 14px;
+  &:hover {
+    color: black;
+    font-size: 14px;
+  }
+`;
+
+const Button = styled.button<{
+  $prop?: 'qwerty'
+}>`
+  color: red;
+  font-size: 14px;
+  &:hover {
+    color: black;
+    font-size: 14px;
+  }
+`;
+
 // Stitches
 const Button = styled("button", {
   color: "red",

@@ -1,3 +1,3 @@
 const { convertStyleFiles } = require('./src');
 
-convertStyleFiles('./test/qwerty');
+convertStyleFiles('./test');
