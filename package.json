@@ -1,13 +1,10 @@
 {
   "name": "styled-components-to-stitches-converter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "Simple styled-components to stitches converter",
   "scripts": {
     "test": "jest"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "fs-jetpack": "^5.1.0",
     "lodash": "^4.17.21",
@@ -15,5 +12,24 @@
   },
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "main": "index.js",
+  "bin": "./index.js",
+  "keywords": [
+    "styled-components-to-stitches-converter",
+    "styled-components-to-stitches",
+    "styled-components",
+    "styled-components-converter",
+    "stitches-converter"
+  ],
+  "files": [
+    "src",
+    "!test"
+  ],
+  "author": "Roman Morgunov <rom4ik9994@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RomanMorgunov/styled-components-to-stitches-converter.git"
   }
 }
